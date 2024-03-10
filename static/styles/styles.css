@@ -6,10 +6,12 @@
 }
 
 body {
-
-}
-
-.header-container {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 62.5rem;
+    background-color: black;
 }
 
 .logo {
@@ -17,10 +19,34 @@ body {
     width: 4rem;
 }
 
+.nav-link,
+.dropdown-toggle,
+.nav-item {
+    color: var(--color-primary)!important;
+}
+
 .nav-link:hover {
     color: var(--color-primary)!important;
 }
 
-.dropdown-toggle {
-    color: black!important;
+@media screen and (max-width: 576px) {
+    .hero-title {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .hero-title {
+        font-size: 85px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-title {
+        font-size: 100px;
+    }
+}
+
+.hero-subtitle {
+    font-size: 30px;
 }
